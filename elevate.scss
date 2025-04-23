@@ -1,7 +1,11 @@
+$box-shadow-primary: 0 2px 10px rgba(0, 0, 0, 0.1);
+$color-primary: #ff7e5f;
+$color-background: #333;
+
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
-    color: #333;
+    color: $color-background;
     margin: 0;
     padding: 0;
 }
@@ -15,13 +19,13 @@ h2 {
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: $box-shadow-primary;
     margin-bottom: 10px;
 
     .logo {
         font-size: 24px;
         font-weight: bold;
-        color: #ff7e5f;
+        color: $color-primary;
     }
 
     .nav-links {
@@ -38,7 +42,7 @@ h2 {
             font-weight: bold;
         
             &:hover {
-                color: #ff7e5f;
+                color: $color-primary;
             }
         }
     } 
@@ -57,7 +61,7 @@ h2 {
     text-decoration: none;
     border: none;
     border-radius: 8px;
-    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+    background: linear-gradient(45deg, $color-primary, #feb47b);
 
         &:hover {
             box-shadow: 0px 5px 15px rgba(255, 126, 95, 0.4);
@@ -78,7 +82,7 @@ h2 {
 
     h1 {
         font-size: 48px;
-        color: #ff7e5f;
+        color: $color-primary;
     }
 
     p {
@@ -107,14 +111,14 @@ h2 {
     padding: 20px;
     width: 27%;
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: $box-shadow-primary;
 }
 
 /* Footer */
 .footer {
     text-align: center;
     padding: 20px;
-    background: #222;
+    background: $color-background;
     color: white;
 }
 
