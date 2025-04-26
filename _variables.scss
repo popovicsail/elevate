@@ -1,0 +1,13 @@
+@mixin responsive($max-screen-size) {
+    @media (max-width: $max-screen-size) {
+      @content;
+    }
+  }
+
+$breakpoint-extra-small: 576px;
+$breakpoint-small: 768px;
+$breakpoint-medium: 992px;
+$breakpoint-large: 1200px; 
+$box-shadow-primary: 0 2px 10px rgba(0, 0, 0, 0.1);
+$color-primary: #ff7e5f;
+$color-background: #333;

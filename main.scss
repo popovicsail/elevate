@@ -1,0 +1,14 @@
+@use 'variables' as *;
+@use 'header';
+@use 'primary-btn';
+@use 'content';
+
+body {
+    font-family: Arial, sans-serif;
+    color: $color-background;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    font-size: 32px;
+}

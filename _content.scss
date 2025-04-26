@@ -1,0 +1,86 @@
+@use 'variables' as *;
+
+/* Main Section */
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 10px;
+
+    @include responsive ($breakpoint-extra-small) {
+        flex-direction: column;
+    }
+    
+    .content {
+        width: 50%;
+
+        @include responsive ($breakpoint-extra-small) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    h1 {
+        font-size: 48px;
+        color: $color-primary;
+
+        @include responsive ($breakpoint-extra-small) {
+            text-align: center;
+        }
+    }
+
+    p {
+        font-size: 18px;
+
+        @include responsive ($breakpoint-extra-small) {
+            text-align: center;
+        }
+    }
+
+    img {
+        width: 40%;
+
+        @include responsive ($breakpoint-extra-small) {
+            width: 60%;
+        }
+    }
+}
+
+/* Features & Plans Sections */
+.features {
+    background: #f3f3f3;
+}
+.center-section {
+    text-align: center;
+    padding: 50px 10px;
+}
+.card-list {
+    display: flex;
+    justify-content: space-between;
+
+    @include responsive ($breakpoint-extra-small) {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+}
+.card {
+    background: white;
+    padding: 20px;
+    width: 27%;
+    border-radius: 10px;
+    box-shadow: $box-shadow-primary;
+
+    @include responsive ($breakpoint-extra-small) {
+        width: 80%;
+    }
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: $color-background;
+    color: white;
+}

@@ -1,16 +1,3 @@
-/* General Styles */
-body {
-  font-family: Arial, sans-serif;
-  color: #333;
-  margin: 0;
-  padding: 0;
-}
-
-h2 {
-  font-size: 32px;
-}
-
-/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -47,7 +34,6 @@ h2 {
   color: #ff7e5f;
 }
 
-/* Primary Button */
 .primary-btn {
   display: inline-block;
   padding: 15px 30px;
@@ -153,6 +139,17 @@ h2 {
   padding: 20px;
   background: #333;
   color: white;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 32px;
 }
 
 /*# sourceMappingURL=elevate.css.map */
