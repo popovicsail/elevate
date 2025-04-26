@@ -42,7 +42,7 @@ h2 {
         list-style: none;
         padding: 0;
 
-        @include responsive ($breakpoint-small) {
+        @include responsive ($breakpoint-extra-small) {
             display: flex;
             text-align: center;
             flex-direction: column;
@@ -92,14 +92,14 @@ h2 {
     justify-content: space-between;
     padding: 100px 10px;
 
-    @include responsive ($breakpoint-small) {
+    @include responsive ($breakpoint-extra-small) {
         flex-direction: column;
     }
     
     .content {
         width: 50%;
 
-        @include responsive ($breakpoint-small) {
+        @include responsive ($breakpoint-extra-small) {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -110,7 +110,7 @@ h2 {
         font-size: 48px;
         color: $color-primary;
 
-        @include responsive ($breakpoint-small) {
+        @include responsive ($breakpoint-extra-small) {
             text-align: center;
         }
     }
@@ -118,7 +118,7 @@ h2 {
     p {
         font-size: 18px;
 
-        @include responsive ($breakpoint-small) {
+        @include responsive ($breakpoint-extra-small) {
             text-align: center;
         }
     }
@@ -126,7 +126,7 @@ h2 {
     img {
         width: 40%;
 
-        @include responsive ($breakpoint-small) {
+        @include responsive ($breakpoint-extra-small) {
             width: 60%;
         }
     }
@@ -144,7 +144,7 @@ h2 {
     display: flex;
     justify-content: space-between;
 
-    @include responsive ($breakpoint-small) {
+    @include responsive ($breakpoint-extra-small) {
         flex-direction: column;
         align-items: center;
         gap: 50px;
@@ -157,7 +157,7 @@ h2 {
     border-radius: 10px;
     box-shadow: $box-shadow-primary;
 
-    @include responsive ($breakpoint-small) {
+    @include responsive ($breakpoint-extra-small) {
         width: 80%;
     }
 }
