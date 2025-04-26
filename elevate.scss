@@ -1,3 +1,13 @@
+@mixin responsive($max-screen-size) {
+    @media (max-width: $max-screen-size) {
+      @content;
+    }
+  }
+
+$breakpoint-extra-small: 576px;
+$breakpoint-small: 768px;
+$breakpoint-medium: 992px;
+$breakpoint-large: 1200px; 
 $box-shadow-primary: 0 2px 10px rgba(0, 0, 0, 0.1);
 $color-primary: #ff7e5f;
 $color-background: #333;
@@ -31,6 +41,12 @@ h2 {
     .nav-links {
         list-style: none;
         padding: 0;
+
+        @include responsive ($breakpoint-small) {
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+        }
         
         li {
             display: inline-block;
@@ -76,21 +92,43 @@ h2 {
     justify-content: space-between;
     padding: 100px 10px;
 
+    @include responsive ($breakpoint-small) {
+        flex-direction: column;
+    }
+    
     .content {
         width: 50%;
+
+        @include responsive ($breakpoint-small) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     h1 {
         font-size: 48px;
         color: $color-primary;
+
+        @include responsive ($breakpoint-small) {
+            text-align: center;
+        }
     }
 
     p {
         font-size: 18px;
+
+        @include responsive ($breakpoint-small) {
+            text-align: center;
+        }
     }
 
     img {
         width: 40%;
+
+        @include responsive ($breakpoint-small) {
+            width: 60%;
+        }
     }
 }
 
@@ -105,6 +143,12 @@ h2 {
 .card-list {
     display: flex;
     justify-content: space-between;
+
+    @include responsive ($breakpoint-small) {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
 }
 .card {
     background: white;
@@ -112,6 +156,10 @@ h2 {
     width: 27%;
     border-radius: 10px;
     box-shadow: $box-shadow-primary;
+
+    @include responsive ($breakpoint-small) {
+        width: 80%;
+    }
 }
 
 /* Footer */
@@ -122,14 +170,3 @@ h2 {
     color: white;
 }
 
-/* Responsive */
-@media screen and (max-width: 992px) {
-    .card-list {
-        flex-direction: column;
-        align-items: center;
-        gap: 50px;
-    }
-    .card {
-        width: 80%;
-    }
-}
